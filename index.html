@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+<title> Organizare Evenimente OSA </title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/main.css" />
+<!--link rel="stylesheet" href="css/reset.css" /> -->
+
+</head>
+
+    
+<body style = "font-family: cursive; color: black; text-align: justify; background-color: white">
+
+    <nav>
+        <div class="wrapper">
+            <ul>
+                <li><a href="index.html"> Acasa </a></li>                
+                <?php
+                    if (isset($_SESSION["useruid"]))
+                    {
+                        echo "<li><a href='includes/logout.inc.php'> Login </a></li>";
+                    }
+                    else
+                    {
+                        echo "<li><a href='signup.php'> Sign up </a></li>";
+                        echo "<li><a href='login.php'> Login </a></li>";
+                    }
+                ?>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    
+    
+    <div style="text-align: center; font-size: 20px">
+    <br>
+    <h1>Evenimente OAS</h1>
+    </div>
+    <br>
+    <h3>
+    Despre noi:</h3>
+        <br>
+    <h4>
+        Activam in domeniul organizarii de evenimente de peste 15 ani, iar experienta noastra va garanteaza serviciile oferite.
+        <br>
+        Daca vreti sa organizati nunti, botezuri, petreceri corporate sau orice altceva in acest domeniu, apelati la noi!
+        <br>
+        Pentru a crea o rezervare, este necesar sa va <a href='login.php'> logati</a> sau sa va <a href='signup.php'> creati un cont</a>. 
+    </h4>
+    
+    <section class="wrapper style3 container special">
+
+							<header class="major">
+								<h2> <strong>Ce fel de evenimente pregatim:</strong></h2>
+							</header>
+
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<header>
+											<h3><strong> <br>Nunti </strong></h3>
+                                            <br>
+                                            <img src="imagini/nunta.jpg" alt="Nunta" >
+
+										</header>
+										<p><strong>Daca vrei sa te simti special in ziua cea mare a casatoriei, atunci poti apela cu incredere la noi. Garantam ca petrecerea va fi foarte reusita, iar invitatii nu o vor uita curand!</strong> </p>
+									</section>
+
+								</div>
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<header>
+											<h3> <strong> Botez </strong></h3>
+                                            <img src="imagini/botez.jpg" alt="Botez" width = "500" height="400">
+
+										</header>
+										<p><strong> Dupa Taina Botezului, chemati invitatii la cea mai buna petrecere de botez pe care au vazut-o. Noi ne vom ocupa de toate, dorinta voastra ne este porunca! </strong></p>
+									</section>
+
+								</div>
+							</div>
+                            
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+
+									<section>
+										<header>
+											<h3> Alte petreceri </h3>
+                                            <img src="imagini/petreceri.jpg" alt="Petreceri" width = "500" height="400">
+										</header>
+										<p><strong> Vreti sa organizati petreceri private, corporate, sau cu totul altceva? Apelati la noi. Experienta noastra in domeniu va garanteaza o seara excelenta.</strong> </p>
+									</section>
+
+    
+    
+    
+    
+    <section color id="123">
+    Credem că evenimentele sunt despre voi. Treaba noastră este să vă ajutăm să faceți o primă impresie extraordinară cu un eveniment de neuitat, ajutând clienții din toate domeniile cu evenimente de toate dimensiunile.
+Lucram pe concepte individuale fara liste predefinite. Vă ajutam să vă definiți viziunea, apoi să o transformați în realitate.
+    
+    </section>
+    
+    
+</body>
+
+    
+</html>
